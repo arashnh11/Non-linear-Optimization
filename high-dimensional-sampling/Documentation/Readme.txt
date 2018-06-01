@@ -49,5 +49,6 @@ Windows
 
 Bugs, issues, questions
 -------------------------------
-All inquiries should be submitted on github or by email to a.nematihayati@gmail.com
+All inquiries should be submitted on github https://github.com/arashnh11/Non-linear-Optimization
+or by email to a.nematihayati@gmail.com
 Comments are greatly appreciated.
