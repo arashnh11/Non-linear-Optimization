@@ -8,7 +8,7 @@ from cgitb import reset
 reset
 import time
 import sys
-sys.path.insert(0, 'citrine-challenge/citrine/Source/')
+sys.path.insert(0, '../')
 from Source.optimization import Optimization
 
 def main(input_file, output_file, N):

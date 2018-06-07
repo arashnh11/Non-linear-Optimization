@@ -95,7 +95,7 @@ class Optimization():
                 else:
                     cons[len(cons) - 1] = {'type': 'ineq', 'fun': lambda x: -res.fun - thres - self.test_gen.f(x, dim-1)}
                 count = count + 1
-                print(count, " ", end="", flush=True)
+                print(count, " ", end='', flush=True)
                 for i in res.x:
                     print("%1.6f" % i, " ", end="", flush=True)
                 print("")
