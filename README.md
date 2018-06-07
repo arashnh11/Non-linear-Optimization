@@ -11,15 +11,15 @@ To use this software:
 ------------------------------------
 1. Go to the Build directory.
 2. Run the following command:
-python <input_file> <output_file> <N_results>
+python3 run.py <input_file> <output_file> <N_results>
 
 Example:
-python "../Testing/Examples/example.txt" "../Output/output.txt" 1000
+python3 run.py python3 run.py input.txt output.txt 100
 
 A demo of the following testcase can be found inside the Testing directory:
 1. Go to the Testing directory
 2. Run the following command:
-python demo.py
+python3 demo.py
 
 Sample input file:
 2 # Number of dimensions
@@ -38,8 +38,8 @@ The following standard python libraries must be installed (if not already exist)
 To compile the code:
 Linux
 1. cd Build
-2. python3 <input_file> <output_file> <N_results>
-Example: python3 input.txt output.txt 100
+2. python3 run.py <input_file> <output_file> <N_results>
+Example: python3 run.py input.txt output.txt 100
 
 Windows
 1. Go to the Build directory.
@@ -47,6 +47,7 @@ Windows
 3. Go to Run, the Run configurations from the menu-bar (for Eclipse)
 4. Go to the Arguments tab and paste the following:
 5. 		<input_file> <output_file> <N_results>
+Example: python3 run.py input.txt output.txt 100
 6. Click to Run the testcase
 
 Bugs, issues, questions
