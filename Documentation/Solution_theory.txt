@@ -1,0 +1,35 @@
+====================================================================================
+Citrine Informatics Technical Challenge
+Scientific Software Engineer
+
+Efficient sampling of high dimensional spaces with complex, non-linear constraints
+By Arash Nemati Hayati - 06/01/2018
+====================================================================================
+
+The problem of efficient sampling of high-dimensional spaces with arbitrary constraints is
+essentially an optimization problem with the objective of achieving n-dimensional maximum volume where:
+
+independent variables = x1, x2, ..., xn
+Objective function = x1 * x2 ... * xn
+subjected to the following constraints:
+g_i(x) >= 0
+
+To solve this problem, I propose basin-hopping stochastic optimization method 
+with two stages of local and global maximization at each iteration. Within basin-hopping
+methodology, I use Monte Carlo optimization appraoch
+The algorithm has the following stages:
+
+1. Set the initial values for all variables
+2. Find a local maximum using Constrained Optimization BY Linear Approximation (COBYLA) 
+and Sequential Least SQuares Programming (SLSQP)
+3. Add a random purturbation to the coordinates of the local maxmimum solution to displace
+the point and explore potential non-local maximum solutions
+4. Find the next local maximum around the new location and compare that to the previous
+answer. If the new solution provides higher value for the objective function, then
+replace the old solution with new one. Otherwise, keep the old solution.
+5. continue this process until maximum number of candidates (set by user) is reached.
+
+For further reading please refer to the following documents:
+https://arxiv.org/abs/cond-mat/9803344
+https://ntrs.nasa.gov/search.jsp?R=20140007521
+https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.basinhopping.html#scipy.optimize.basinhopping
