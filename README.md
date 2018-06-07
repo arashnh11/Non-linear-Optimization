@@ -14,7 +14,7 @@ To use this software:
 python3 run.py <input_file> <output_file> <N_results>
 
 Example:
-python3 run.py python3 run.py input.txt output.txt 100
+python3 run.py input.txt output.txt 100
 
 A demo of the following testcase can be found inside the Testing directory:
 1. Go to the Testing directory
