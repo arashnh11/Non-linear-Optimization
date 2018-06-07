@@ -38,7 +38,8 @@ The following standard python libraries must be installed (if not already exist)
 To compile the code:
 Linux
 1. cd Build
-2. python <input_file> <output_file> <N_results>
+2. python3 <input_file> <output_file> <N_results>
+Example: python3 input.txt output.txt 100
 
 Windows
 1. Go to the Build directory.
